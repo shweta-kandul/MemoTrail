@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function LocationSearch() {
+export default function LocationSearch({onSelectPlace}) {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
 
@@ -32,6 +32,9 @@ export default function LocationSearch() {
     setQuery(location.properties.formatted);
     setSuggestions([]);
     console.log("📍 Selected:", location.properties);
+    if(onSelectPlace){
+      onSelectPlace(location.properties);
+    }
   };
 
   return (
