@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
 
           {/* <!-- Right Side: Image --> */}
-          <div classNameName="md:w-1/2">
+          <div className="md:w-1/2">
             <img
               src={homeIcon}
               alt="AI Trip Planner"

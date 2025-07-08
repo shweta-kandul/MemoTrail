@@ -31,7 +31,7 @@ export default function LocationSearch({onSelectPlace}) {
   const handleSelect = (location) => {
     setQuery(location.properties.formatted);
     setSuggestions([]);
-    console.log("📍 Selected:", location.properties);
+    // console.log("📍 Selected:", location.properties);
     if(onSelectPlace){
       onSelectPlace(location.properties);
     }

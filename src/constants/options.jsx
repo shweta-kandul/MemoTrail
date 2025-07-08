@@ -4,7 +4,7 @@ export const SelectTravelesList=[
     title:'Just Me',
     desc:'A sole traveles in exploration',
     icon:'✈️',
-    people:'1'
+    people:'1 People'
   },
 
    {
@@ -12,7 +12,7 @@ export const SelectTravelesList=[
     title:'A Couple',
     desc:'Two traveles in tandem',
     icon:'🥂',
-    people:'1'
+    people:'2 People'
   }
 ,
    {
@@ -20,14 +20,14 @@ export const SelectTravelesList=[
     title:'Family',
     desc:'A group of fun loving adv',
     icon:'🏡',
-    people:'1'
+    people:'3 to 5 People'
   },
     {
     id:4,
     title:'Friends',
     desc:'A bunch of thrill-seeks',
     icon:'🚞',
-    people:'1'
+    people:'5 to 10 People'
   }
 
   
