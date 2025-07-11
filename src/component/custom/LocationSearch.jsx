@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function LocationSearch({onSelectPlace}) {
+export default function LocationSearch({ onSelectPlace }) {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
 
-  const API_KEY = "0c9821545b044ba8bfe5685772eb4db8"; 
+  const API_KEY = import.meta.env.VITE_GEOAPIFY_API_KEY;
 
   const handleInputChange = async (e) => {
     const value = e.target.value;
@@ -32,7 +32,7 @@ export default function LocationSearch({onSelectPlace}) {
     setQuery(location.properties.formatted);
     setSuggestions([]);
     // console.log("📍 Selected:", location.properties);
-    if(onSelectPlace){
+    if (onSelectPlace) {
       onSelectPlace(location.properties);
     }
   };
